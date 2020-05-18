@@ -1,4 +1,7 @@
 package org.books.booksmanager.database.repository;
 
-public interface AuthorRepository {
+import org.books.booksmanager.model.Book;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AuthorRepository extends JpaRepository<Book, Long> {
 }
